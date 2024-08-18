@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Рулетка</title>
+  <link rel="icon" href="c:\Users\igram\OneDrive\Рабочий стол\проект рулетка\аватарка.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylee.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="effect-shine">GGСКАМ</a>
+
+      <div class="navbar-wrap">
+        <ul class="navbar-menu">
+          <li><a href="#">О нас!  🕶</a></li>
+            <li><a href="#">Информация 🎱</a></li>
+            <li><a href="#">Куда жмать? 👥</a></li>
+            <li><button id="openModalBtn">Шлёпа? 🐈</button>
+              <div id="myModal" class="modal">
+                  <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <img src="https://www.meme-arsenal.com/memes/51c41316b28240488a515835810636aa.jpg" alt="Кот Шлёпа">
+    </div>
+      </div>   
+                </div>
+          <li><a href="#"></a></li>
+        </ul>
+        <div class="avatar">
+          <img src="c:\Users\igram\OneDrive\Рабочий стол\проект рулетка\avatar (1).png" alt="">
+        </div>
+        
+        <a href="#" class="callback">Обратная связь 💬</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class ="timer">
+    Время до прокрута: <span id="countdown">00:00:00</span>
+</div>
+
+      <div class="app">
+    <img src="pointer.png" alt="" widht="50" height="50">
+
+    <div class="scopeHidden">
+      <ul></ul>
+    </div>
+
+    <button class="btn" onclick="start()">Крутить</button>
+      </div>
+
+
+    </div><script>
+      const modal = document.getElementById("myModal");
+      const btn = document.getElementById("openModalBtn");
+      const span = document.getElementsByClassName("close")[0];
+      
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+      
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+      
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      
+      </script></li>
+
+
+</body>
+</html>
